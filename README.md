@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Черкашин](https://up.htmlacademy.ru/adaptive/32/user/2453853).
-* Наставник: [Анна Лисененкова](https://github.com/Dach1980/Cherkashin-cat-energy-32.git).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
