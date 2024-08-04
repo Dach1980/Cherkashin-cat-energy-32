@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-innerheader">
+  <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="images/header-logo.svg" width="202" height="59" alt="Логотип Кэт энерджи">
     </a>
@@ -40,7 +40,7 @@
     <section class="basic-products">
       <h2 class="visually-hidden">Наша продукция</h2>
       <div class="basic-products__wrapper">
-        <ul class="catalog__list cards">
+        <ul class="basic-products__list cards">
 
           <li class="cards__item">
             <a class="cards__link" href="product1.html">
@@ -59,7 +59,7 @@
                 <dd class="cards__value">700 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product2.html">
@@ -80,7 +80,7 @@
                 <dd class="cards__value">1000 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product3.html">
@@ -99,7 +99,7 @@
                 <dd class="cards__value">700 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product4.html">
@@ -119,7 +119,7 @@
                 <dd class="cards__value">1000 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product5.html">
@@ -138,7 +138,7 @@
                 <dd class="cards__value">400 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product6.html">
@@ -157,7 +157,7 @@
                 <dd class="cards__value">700 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item">
             <a class="cards__link" href="product7.html">
@@ -176,7 +176,7 @@
                 <dd class="cards__value">500 ₽</dd>
               </dl>
             </div>
-            <a class="catalog__item-button button-order" href="#">Заказать</a>
+            <a class="basic-products__item-button button-order" href="#">Заказать</a>
           </li>
           <li class="cards__item cards__item--more">
             <a class="cards__link" href="#">
@@ -195,7 +195,7 @@
     <section class="addition-food">
       <h2 class="addition-food__title title">Дополнительные товары</h2>
       <div class="addition-food__wrapper">
-        <ul class="catalog__list">
+        <ul class="addition-food__list">
           <li class="addition-food__item">
             <h3 class="addition-food__title">Сахарозаменитель</h3>
             <span class="addition-food__description">1 упаковка (100 г)</span>
@@ -239,15 +239,15 @@
     <section class="subscribe">
       <h2 class="subscribe__title title">Акции и новинки</h2>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="subscribe__form--text">
-          <p class="subscribe__form--title">
+        <div class="subscribe__form-text">
+          <p class="subscribe__form-title">
             Подпишитесь на наши новости и не пропустите ни одного предложения!
           </p>
         </div>
         <div class="subscribe__form-block">
-          <input class="subscribe__form--field" placeholder="Ваш e-mail" type="email" name="newsletter--email" value="кuklachev@gmail.com" id="email" required>
+          <input class="subscribe__form-field" placeholder="Ваш e-mail" type="email" name="newsletter--email" value="кuklachev@gmail.com" id="email" required>
           <label for="email"></label>
-          <button class="subscribe__form--button" type="submit">
+          <button class="subscribe__form-button" type="submit">
             <span>ПОДПИСАТЬСЯ</span>
           </button>
         </div>
@@ -255,13 +255,13 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper"></div>
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <p class="contacts__title">Приглашаем сотрудничеству дилеров!</p>
-      <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span> </address>
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contacts__title">Приглашаем сотрудничеству дилеров!</p>
+        <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span> </address>
       </div>
-      <div class="contacts-map__wrapper">
-        <img class="contacts-map__wrapper" src="images/map.jpg" width="1440" height="400" alt="Расположение магазина на карте">
+      <div class="contacts__map">
+        <img class="contacts__map-img" src="images/map.jpg" width="1440" height="400" alt="Расположение магазина на карте">
       </div>
     </section>
   </main>
@@ -269,8 +269,8 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <a class="main-footer__logo" href="index.html">
-          <img class="main-header__logo-image" src="images/footer-logo.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+        <a class="main-footer__link" href="index.html">
+          <img class="main-footer__image" src="images/footer-logo.svg" width="128" height="24" alt="Логотип Кэт энерджи">
         </a>
       </div>
       <div class="main-footer__social social">
