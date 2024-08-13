@@ -3,7 +3,7 @@
 }
 
 .cards__item {
-
+  list-style: none;
 }
 
 .cards__link {
@@ -19,17 +19,24 @@
 }
 
 .cards__link-text {
-
+  text-decoration: none;
 }
 
 .cards__title {
-
-
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--dark-black2);
+  text-transform: uppercase;
 }
 
 .cards__description {
-
-
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-description);
 }
 
 .cards__option {

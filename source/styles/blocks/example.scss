@@ -11,7 +11,11 @@
 }
 
 .example__description {
-
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-description);
 }
 
 .example__list {
@@ -23,15 +27,35 @@
 }
 
 .example__number {
-
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--black);
 }
 
 .example__option {
-
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--text-description);
 }
 
 .example__total {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
+}
 
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
 }
 
 .example__image-slim-wrapper {
