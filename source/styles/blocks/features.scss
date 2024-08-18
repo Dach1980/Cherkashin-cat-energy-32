@@ -16,6 +16,7 @@
   display: flex;
   column-gap: 94px;
   margin-bottom: 50px;
+  counter-reset: list1;  /* Инициируем счетчик */
 }
 
 .features__item {
@@ -24,6 +25,9 @@
   list-style: none;
   width: 230px;
   // row-gap: 31px;
+  &::before {
+    counter-increment: list1; /* Увеличиваем значение счетчика */
+    content: counter(list1) ". "; /* Выводим число */
 }
 
 .features__description {
