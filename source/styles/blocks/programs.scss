@@ -1,14 +1,14 @@
-// .programms {
+// .programs {
 
 
 // }
 
-// .programms__wrapper {
+// .programs__wrapper {
 
 
 // }
 
-.programms__list {
+.programs__list {
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
 }
 
-.programms__item {
+.programs__item {
   position: relative;
   // display: flex;
   // flex-direction: column;
@@ -39,7 +39,7 @@
   // }
 }
 
-.programms__item--slim {
+.programs__item--slim {
   display: absolute;
   background-image: url("../../icons/cat-slim.svg");
 
@@ -62,7 +62,7 @@
   }
 }
 
-.programms__item--pro {
+.programs__item--pro {
   display: absolute;
   background-image: url("../../icons/cat-pro.svg");
 
@@ -85,7 +85,7 @@
   }
 }
 
-.programms__title {
+.programs__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -93,7 +93,7 @@
   color: var(--gray-darken, #ff6347);
 }
 
-.programms__description {
+.programs__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -101,7 +101,7 @@
   color: var(--text-description, #ff6347);
 }
 
-.programms__link {
+.programs__link {
   position: relative;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
