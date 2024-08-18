@@ -23,7 +23,7 @@
   list-style: none;
   width: 230px;
   z-index: 2;
-  // row-gap: 31px;
+
   &::before {
     position: absolute;
     counter-increment: list; /* Увеличиваем значение счетчика */
