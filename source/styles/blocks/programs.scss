@@ -86,27 +86,18 @@
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include secondary-font (36px, 1); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
 }
 
 .programs__description {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  @include primary-font (16px, 1); // $font-size, $line-height
   color: var(--text-description, #ff6347);
 }
 
 .programs__link {
+  @include secondary-font (20px, 30px); // $font-size, $line-height
   position: relative;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
   color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
   text-decoration: none;
