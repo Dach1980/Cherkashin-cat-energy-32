@@ -52,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 70px 61px 55px 52px;;
+    padding: 70px 61px 55px 52px;
   }
 }
 
@@ -102,7 +102,7 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: var(--bg-basic);
+  background-color: var(--bg-basic, #ff6347);
   border-radius: 50%;
   top: 0;
   left: 0;
@@ -150,7 +150,7 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: var(--bg-basic);
+  background-color: var(--bg-basic, #ff6347);
   border-radius: 50%;
   top: 0;
   left: 0;
