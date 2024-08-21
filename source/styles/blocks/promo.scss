@@ -1,8 +1,9 @@
-// .promo {
-
-// }
+.promo {
+  // display: grid;
+}
 
 .promo__wrapper {
+  // grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
   width: 610px;
