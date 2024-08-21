@@ -34,6 +34,16 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+  color: var(--black, #ff6347);
+  background-color: var(--white, #ff6347);
+  }
+
+  @media (min-width: $desktop-width) {
+    color: var(--black, #ff6347);
+    background-color: var(--white, #ff6347);
+  }
 }
 
 // .main-nav__link--current {
