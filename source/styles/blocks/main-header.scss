@@ -1,19 +1,23 @@
 .main-header {
-  width: 320px;
+  width: $mobile-width;
   display: flex;
   flex-direction: column;
   position: relative;
-  // outline: 5px solid rgba(255, 0, 0, 0.8);
-  // outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
+    padding: 25px 34px 25px 30px;
     flex-direction: row;
     justify-content: space-between;
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     height: 169px;
   }
 }
@@ -23,11 +27,11 @@
   text-align: left;
   padding: 13px 50px 15px 20px;
 
-  // outline: 5px solid rgba(255, 0, 0, 0.8);
-  // outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
+    padding: 0;
     height: 50px;
+    // outline: 5px solid rgba(255, 255, 0, 0.8);
+    outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
