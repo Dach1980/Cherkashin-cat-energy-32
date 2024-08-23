@@ -11,6 +11,9 @@
 // }
 
 body {
+  margin: 0;
+  padding: 0;
+
   @include primary-font (16px, 18px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   background-color: var(--white, #ff6347);
