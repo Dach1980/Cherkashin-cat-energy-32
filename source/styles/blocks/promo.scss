@@ -1,27 +1,29 @@
 .promo {
-  display: grid;
+  width: $mobile-width;
+  display: flex;
+  flex-direction: column;
   background-image:
-    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 40%),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 60%),
     image-set(
-      url("../../images/hero-cat-mobile@2x.jpg") 2x,
+      url("../../images/hero-cat-mobile@2x.png") 2x,
       url("../../images/hero-cat-mobile.png") 1x
     );
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-color: var(--bg-primary, #ffffff);
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    display: grid;
     background-image: none;
-    color: var(--color-second, #fa8072);
   }
 
   @media (min-width: $desktop-width) {
-
+    width: $desktop-width;
     background-image:
       image-set(
-        url("../../images/hero-cat-desktop@2x.jpg") 2x,
+        url("../../images/hero-cat-desktop@2x.png") 2x,
         url("../../images/hero-cat-desktop.png") 1x,
-        linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%)
+        linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
       );
     background-position: 100% 0;
   }
@@ -47,9 +49,11 @@
 .promo__title {
   @include secondary-font (36px, 1); // $font-size, $line-height
   color: var(--white, #ff6347);
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
+    text-align: left;
     color: var(--black, #ff6347);
     background-color: var(--white, #ff6347);
   }
@@ -57,9 +61,12 @@
 
 .promo__slogan {
   @include secondary-font (14px, 1); // $font-size, $line-height
+  text-align: center;
+  text-transform: uppercase;
   color: var(--white, #ff6347);
 
   @media (min-width: $tablet-width) {
+    text-align: left;
     @include secondary-font (20px, 1); // $font-size, $line-height
     color: var(--gray-darken, #ff6347);
   }
@@ -71,4 +78,9 @@
 
 .promo__link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
