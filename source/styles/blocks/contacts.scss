@@ -28,10 +28,10 @@
 }
 
 .contacts__title {
-  margin: 0;
   @include secondary-font (16px, 20px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {

@@ -1,7 +1,11 @@
 .example {
   width: $mobile-width;
   background-color: var(--bg-secondary, #ff6347);
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -41,6 +45,8 @@
 .example__description {
   @include primary-font (16px, 24px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
+  margin: 0;
+  padding: 0;
 }
 
 // .example__list {
@@ -54,6 +60,10 @@
 .example__number {
   @include secondary-font (24px, 1); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (30px, 37px); // $font-size, $line-height
@@ -67,6 +77,9 @@
 .example__option {
   @include primary-font (12px, 1); // $font-size, $line-height
   color: var(--text-description, #ff6347);
+  margin: 0;
+  padding: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include primary-font (14px, 1); // $font-size, $line-height
@@ -80,6 +93,8 @@
 .example__total {
   @include secondary-font (14px, 20px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
@@ -93,6 +108,8 @@
 .example__cost {
   @include secondary-font (14px, 20px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
@@ -103,31 +120,27 @@
   }
 }
 
-// .example__image-slim-wrapper {
-//   width: 140px;
-//   height: 256px;
-
-//   @media (min-width: $tablet-width) {
-//     width: $tablet-width;
-//   }
-// }
+.example__image-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
 
 .example__slim {
   width: 140px;
   height: 256px;
+  object-position: right;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
 }
 
-// .example__image-fat-wrapper {
-
-// }
-
 .example__fat {
   width: 140px;
   height: 256px;
+  object-position: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;

@@ -55,16 +55,16 @@
     width: 230px;
     z-index: 2;
 
-  &::before {
-    position: absolute;
-    counter-increment: list; /* Увеличиваем значение счетчика */
-    content: counter(list) " "; /* Выводим число */
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    color: var(--gray-light, #ff6347);
-    transform: translate(58%, -13%);
+    &::before {
+      position: absolute;
+      counter-increment: list; /* Увеличиваем значение счетчика */
+      content: counter(list) " "; /* Выводим число */
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--gray-light, #ff6347);
+      transform: translate(58%, -13%);
     }
   }
 }
@@ -73,6 +73,7 @@
   margin: 0;
   width: 200px;
   padding-top: 2px;
+
   @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
   z-index: 1;
