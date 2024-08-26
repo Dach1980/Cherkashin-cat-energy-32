@@ -19,7 +19,10 @@
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
-    //
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 26px); // $font-size, $line-height
+    width: 165px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +54,12 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+    width: 165px;
+    text-align: right;
+    // margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +69,9 @@
 
 // .contacts__city {
 
+//   @media (min-width: $tablet-width) {
+//    padding-top: 20px;
+//   }
 // }
 
 .contacts__map {
@@ -69,4 +82,17 @@
 .contacts__image-wrapper {
   margin: 0;
   padding: 0;
+}
+
+.contacts__image {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

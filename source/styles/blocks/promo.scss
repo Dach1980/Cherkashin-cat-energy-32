@@ -48,6 +48,10 @@
     width: 610px;
     row-gap: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
 }
 
 .promo__title {
