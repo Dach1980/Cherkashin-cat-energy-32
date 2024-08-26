@@ -33,19 +33,19 @@
 
 .example__title {
   @include secondary-font (36px, 40px); // $font-size, $line-height
-  margin: 0;$font-size,$line-heightmargin
+  margin: 0;
   margin-bottom: 40px;
   color: var(--gray-darken, #ff6347);
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
-    margin-bottom: 60px;$font-size,$line-heightmargin-bottom
+    margin-bottom: 60px;
   }
 }
 
 .example__description {
   @include primary-font (16px, 24px); // $font-size, $line-height
-  color: var(--text-description, #ff6347);$font-size,$line-heightcolor
+  color: var(--text-description, #ff6347);
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -75,7 +75,7 @@
 
 .example__number {
   @include secondary-font (24px, 1); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
+  color: var(--gray-darken, #ff6347);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -92,7 +92,7 @@
 
 .example__option {
   @include primary-font (12px, 1); // $font-size, $line-height
-  color: var(--text-description, #ff6347);$font-size,$line-heightcolor
+  color: var(--text-description, #ff6347);
   margin: 0;
   padding: 0;
   text-align: center;
@@ -108,13 +108,13 @@
 
 .example__total {
   @include secondary-font (14px, 20px); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
+  color: var(--gray-darken, #ff6347);
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
-    display: flex;$font-size,$line-heightdisplay
+    display: flex;
     flex-direction: column;
     text-align: right;
   }
@@ -126,7 +126,7 @@
 
 .example__cost {
   @include secondary-font (14px, 20px); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
+  color: var(--gray-darken, #ff6347);
   margin: 0;
   padding: 0;
 
