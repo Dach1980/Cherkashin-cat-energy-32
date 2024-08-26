@@ -42,8 +42,7 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 90px 94px;
     counter-reset: list;  /* Инициируем счетчик */
     margin-bottom: 80px;

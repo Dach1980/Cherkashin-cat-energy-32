@@ -8,9 +8,8 @@
     width: $tablet-width;
     height: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 25px 34px 25px 30px;
-    flex-direction: row;
     justify-content: space-between;
     // outline: 5px solid rgba(255, 0, 0, 0.8);
     // outline-offset: -5px;
