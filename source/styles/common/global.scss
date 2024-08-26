@@ -10,8 +10,7 @@ img {
 }
 
 body {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
 
   @include primary-font (16px, 18px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
