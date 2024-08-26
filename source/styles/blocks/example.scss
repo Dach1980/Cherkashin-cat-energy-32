@@ -8,10 +8,13 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    grid-template-columns: 30px 1fr 30px;
+    background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%);
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    grid-template-columns: 110px 1fr 110px;
+    background-image: linear-gradient(to bottom, #ffffff 40%, #eaeaea 40%);
   }
 }
 
@@ -19,7 +22,8 @@
   margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    margin: 0 30px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,36 +33,49 @@
 
 .example__title {
   @include secondary-font (36px, 40px); // $font-size, $line-height
-  margin: 0;
+  margin: 0;$font-size,$line-heightmargin
   margin-bottom: 40px;
   color: var(--gray-darken, #ff6347);
 
   @media (min-width: $tablet-width) {
-    font-family: $secondary-font-family;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1; // 60px
+    @include secondary-font (60px, 1); // $font-size, $line-height
+    margin-bottom: 60px;$font-size,$line-heightmargin-bottom
   }
 }
 
 .example__description {
   @include primary-font (16px, 24px); // $font-size, $line-height
-  color: var(--text-description, #ff6347);
+  color: var(--text-description, #ff6347);$font-size,$line-heightcolor
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 60px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+.example__item {
   margin: 0;
   padding: 0;
 }
 
-// .example__list {
-
-// }
-
-// .example__item {
-
-// }
-
 .example__number {
   @include secondary-font (24px, 1); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);
+  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
   margin: 0;
   padding: 0;
   text-align: center;
@@ -75,7 +92,7 @@
 
 .example__option {
   @include primary-font (12px, 1); // $font-size, $line-height
-  color: var(--text-description, #ff6347);
+  color: var(--text-description, #ff6347);$font-size,$line-heightcolor
   margin: 0;
   padding: 0;
   text-align: center;
@@ -91,12 +108,15 @@
 
 .example__total {
   @include secondary-font (14px, 20px); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);
+  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
+    display: flex;$font-size,$line-heightdisplay
+    flex-direction: column;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,7 +126,7 @@
 
 .example__cost {
   @include secondary-font (14px, 20px); // $font-size, $line-height
-  color: var(--gray-darken, #ff6347);
+  color: var(--gray-darken, #ff6347);$font-size,$line-heightcolor
   margin: 0;
   padding: 0;
 

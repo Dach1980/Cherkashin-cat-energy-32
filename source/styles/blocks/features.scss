@@ -5,8 +5,7 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     margin: 0;
-    margin-bottom: 50px;
-    border-bottom: 1px solid var(--nav-border, #ff6347);;
+    border-bottom: 1px solid var(--nav-border, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +13,7 @@
   }
 }
 
-.features__wrapper{
+.features__wrapper {
   @media (min-width: $tablet-width) {
     margin: 0 20px;
   }
@@ -43,11 +42,15 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    row-gap: 90px;
-    column-gap: 94px;
+    flex-wrap: wrap;
+    gap: 90px 94px;
     counter-reset: list;  /* Инициируем счетчик */
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -83,12 +86,12 @@
   @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
   z-index: 1;
-  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 24px); // $font-size, $line-height
     color: var(--text-description, #ff6347);
     z-index: 1;
+    padding-top: 32px;
   }
 }
 
