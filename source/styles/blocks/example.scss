@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 110px 1fr 110px;
-    background-image: linear-gradient(to bottom, #ffffff 40%, #eaeaea 40%);
+    background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%);
   }
 }
 
@@ -139,6 +139,75 @@
 
   @media (min-width: $desktop-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
+  }
+}
+
+.example__slider {
+  padding: 0;
+  // display: block;
+  position: relative;
+  width: 4px;
+  // height: 100%;
+  background-color: var(--social-icon, #ff6347);
+  border: none;
+  border-radius: 2px;
+  left: -39%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--social-icon, #ff6347);
+    border-radius: 50%;
+    background-color: var(--white, #ff6347);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    mask-image: url("../../icons/stack.svg#slider-arrows");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    width: 24px;
+    height: 18px;
+    background-color: var(--social-icon, #ff6347);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:is(:hover, :focus, :focus-visible) {
+    background-color: var(--bg-basic, #ff6347);
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: var(--bg-basic, #ff6347);
+  }
+
+  &:is(:hover)::after {
+    background-color: var(--bg-basic, #ff6347);
+  }
+
+  &:is(:active, :focus, :focus-visible)::after {
+    opacity: 0.6;
+    background-color: var(--bg-basic, #ff6347);
+  }
+
+  &:is(:hover, :focus, :focus-visible)::before {
+    border-color: var(--bg-basic, #ff6347);
+  }
+
+  &:is(:active)::before {
+    opacity: 0.6;
+    border-color: var(--bg-basic, #ff6347);
   }
 }
 
