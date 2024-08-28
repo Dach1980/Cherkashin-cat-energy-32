@@ -218,23 +218,15 @@
     mask-repeat: no-repeat;
     mask-size: contain;
     background-color: var(--black, #ff6347);
+    transition: transform 0.3s linear;
+    transform-origin: left center;
   }
 
-  &:hover {
-    &::after {
-      mask-image: url("../../icons/icon-arrow-right-longer.svg");
-      width: 32px;
-      height: 12px;
-    }
+  &:is(:hover, :focus, :focus-visible)::after {
+    transform: scaleX(1.35);
   }
 
-  &:active {
+  &:is(:active)::after {
     opacity: 0.3;
-
-    &::after {
-      mask-image: url("../../icons/icon-arrow-right-longer.svg");
-      width: 32px;
-      height: 12px;
-    }
   }
 }
