@@ -1,8 +1,7 @@
 .promo {
-  width: $mobile-width;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  text-align: center;
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 60%),
     image-set(
@@ -10,14 +9,16 @@
       url("../../images/hero-cat-mobile.png") 1x
     );
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: #3b7d1d;
+  background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    // display: grid;
+    display: flex;
     background-image: none;
     padding-top: 65px;
     padding-left: 120px;
+    background-color: var(--white, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +43,7 @@
   //   top: -40px;
   //   left: 400px;
   // }
+  grid-column: 2 / 3;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -95,7 +97,6 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  margin: 0 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
 

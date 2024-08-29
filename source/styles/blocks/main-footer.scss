@@ -1,15 +1,15 @@
 .main-footer {
-  width: $mobile-width;
-  margin: 0 auto;
+  // width: $mobile-width;
+  // margin: 0 auto;
   background-color: var(--gray-light, #ff6347);
 
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
+  // @media (min-width: $tablet-width) {
+    // width: $tablet-width;
+  // }
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+  // @media (min-width: $desktop-width) {
+    // width: $desktop-width;
+  // }
 }
 
 .main-footer__wrapper {
@@ -51,7 +51,3 @@
   height: 24px;
   background-color: var(--gray-darken, #ff6347);
 }
-
-// .main-footer__social {
-
-// }
