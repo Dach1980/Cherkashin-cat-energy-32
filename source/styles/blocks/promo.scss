@@ -7,7 +7,8 @@
     image-set(
       url("../../images/hero-cat-mobile@2x.png") 2x,
       url("../../images/hero-cat-mobile.png") 1x
-    );
+    ),
+    linear-gradient(90deg, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
   background-color: #3b7d1d;
   background-position: 50% 0;
