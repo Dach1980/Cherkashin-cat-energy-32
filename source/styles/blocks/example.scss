@@ -6,14 +6,14 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    display: flex;
+    // width: $tablet-width;
+    display: block;
     background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 110px 1fr 110px;
-    background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%);
+    // grid-template-columns: 110px 1fr 110px;
+    background-image: linear-gradient(to bottom, #ffffff 27%, #eaeaea 27%);
   }
 }
 
@@ -22,11 +22,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
-    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    display: grid;
+    grid-template-columns: 436px 224px 560px;
+    grid-template-rows: 136px 166px 221px;
   }
 }
 
@@ -40,6 +41,11 @@
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .example__description {
@@ -52,6 +58,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .example__list {
@@ -62,11 +73,19 @@
   grid-template-rows: 70px 60px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 162px 162px 341px;
     grid-template-rows: 70px 14px;
     column-gap: 43px;
     padding-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-column: 1 / 2;
+    grid-row: -2 / -1;
+    grid-template-columns: 162px 162px;
+    grid-template-rows: 85px 35px;
+    gap: 50px 42px;
   }
 }
 
@@ -129,7 +148,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include primary-font (14px, 1); // $font-size, $line-height
+    text-transform: lowercase;
+    background-color: var(--bg-secondary, #ff6347);
   }
 }
 
@@ -154,7 +174,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include secondary-font (20px, 1); // $font-size, $line-height
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+    flex-direction: row;
+    text-align: center;
   }
 }
 
@@ -250,6 +273,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -2 / -1;
+    grid-row: 1 / -1;
   }
 }
 
