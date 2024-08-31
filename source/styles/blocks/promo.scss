@@ -76,6 +76,10 @@
       inset: -169px 0 0 720px; //top,right,bottom,left.
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
 }
 
 .promo__title {
