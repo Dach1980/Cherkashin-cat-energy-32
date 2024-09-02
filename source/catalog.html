@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -15,13 +18,13 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
         <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-        <img class="logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
-      <img class="logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy">
+      <img class="main-header__logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy">
     </a>
 
-    <nav class="main-nav main-nav--opened">
-      <ul class="main-nav__list main-nav__list--close">
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
@@ -304,39 +307,34 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
-      <div class="main-footer__logo">
-        <a class="main-footer__link" href="index.html">
-          <span class="visually-hidden">Логотип Кэт энерджи</span>
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-      <div class="main-footer__developer">
-        <a class="main-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип Кэт энерджи</span>
-        </a>
-      </div>
+    <div class="main-footer__wrapper">
+      <a class="main-footer__link" href="index.html">
+        <span class="visually-hidden">Логотип Кэт энерджи</span>
+      </a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Логотип Кэт энерджи</span>
+      </a>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

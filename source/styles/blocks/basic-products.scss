@@ -2,9 +2,22 @@
 
 // }
 
-// .basic-products__wrapper {
+.basic-products__wrapper {
+  display: flex;
+  flex-direction: column;
 
-// }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
 
 // .basic-products__list {
 
