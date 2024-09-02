@@ -1,6 +1,9 @@
 .main-nav {
+  margin-right: 0;
+
   @media (min-width: $desktop-width) {
     z-index: 3;
+    margin-right: 200px;
   }
 }
 
