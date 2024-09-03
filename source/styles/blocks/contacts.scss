@@ -14,8 +14,6 @@
     display: grid;
     grid-template-columns: 110px 565px 765px;
     grid-template-rows: 95px 199px 106px;
-    // background-color: #ffffff;
-    // position: relative;
   }
 }
 
@@ -77,15 +75,37 @@
   }
 }
 
-.contacts__map {
-  // display: none;
+// .contacts__map {
+//   display: none;
+//   margin: 0;
+//   padding: 0;
+
+//   @media (min-width: $desktop-width) {
+//     z-index: 1;
+//     grid-column: 1 / -1;
+//     grid-row: 1 / -1;
+//   }
+// }
+
+.contacts iframe {
   margin: 0;
   padding: 0;
+  border: none;
+  display: block;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    width: 1440px;
+    height: 400px;
   }
 }
 
