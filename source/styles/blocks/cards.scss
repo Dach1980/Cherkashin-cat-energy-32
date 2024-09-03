@@ -41,11 +41,6 @@
 
 .cards__item-more {
   list-style: none;
-  // border-bottom: 1px solid var(--catalog-border, #ff6347);
-  // display: grid;
-  // grid-template-columns: 280px;
-  // grid-template-rows: 30px 20px 16px 40px;
-  // padding: 25px 20px;
   padding: 25px 20px 24px;
 
   @media (min-width: $tablet-width) {
