@@ -8,12 +8,20 @@
   position: relative;
   padding: 13px 0 15px 20px;
 
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     height: 100px;
     flex-flow: row wrap;
     padding: 25px 34px 25px 30px;
     justify-content: space-between;
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    // outline-offset: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    height: 169px;
   }
 
   @media (min-width: $desktop-width) {

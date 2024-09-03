@@ -45,7 +45,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 450px;
+    min-width: 450px;
     margin: 0;
     list-style: none;
     justify-content: space-between;
@@ -160,7 +160,6 @@
   &:active {
     opacity: 0.3;
   }
-}
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {

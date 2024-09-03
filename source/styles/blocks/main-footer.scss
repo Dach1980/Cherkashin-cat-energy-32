@@ -3,6 +3,7 @@
 }
 
 .main-footer__wrapper {
+
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto auto auto;
@@ -70,6 +71,7 @@
   align-items: center;
   mask-image: url("../../icons/icon-html-academy-text.svg");
   mask-repeat: no-repeat;
+
   width: 113px;
   height: 19px;
   background-color: var(--text-description, #ff6347);
