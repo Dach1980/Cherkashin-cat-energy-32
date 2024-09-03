@@ -9,6 +9,8 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
+    padding-left: 110px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
