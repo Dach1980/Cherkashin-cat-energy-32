@@ -1,3 +1,19 @@
+.cards {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+    margin-bottom: 74px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+    margin-bottom: 71px;
+  }
+}
+
 .cards__item {
   list-style: none;
   border-bottom: 1px solid var(--catalog-border, #ff6347);
@@ -6,6 +22,17 @@
   grid-template-rows: 107px 40px;
   row-gap: 17px;
   padding: 20px 20px 25px;
+  background-image: none;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
+    padding: 10px 37px 40px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 38px 40px;
+  }
 }
 
 .cards__item-more {
@@ -23,6 +50,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .cards__link-more {
@@ -32,7 +69,7 @@
   margin-bottom: 23px;
 }
 
-.cards__link-image {
+.cards__link-image-more {
   width: 30px;
   height: 30px;
 
@@ -61,6 +98,15 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 24px); // $font-size, $line-height
+    text-align: center;
+    width: 135px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
@@ -89,6 +135,12 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+    grid-template-columns: repeat(2, 125px);
+    border-bottom: 1px solid var(--example-border, #ff6347);
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 84px);
   }
 }
 
@@ -134,7 +186,12 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (16px, 20px); // $font-size, $line-height
-    padding: 10px 80px;
+    padding: 10px 75px;
     width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 35px;
+    width: 169px;
   }
 }
