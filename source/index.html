@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <script src="scripts/index.js" defer="defer"></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -48,9 +53,12 @@
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <div class="promo__image-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-food-can-desktop.png 1x, images/promo-food-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-food-can-tablet.png 1x, images/promo-food-can-tablet@2x.png 2x">
-            <img class="promo__image" src="images/promo-food-can-phone.png" width="280" height="270" srcset="images/promo-food-can-phone@2x.png 2x" alt="Большая упаковка еды для котов с курицей">
+            <source media="(min-width: 1440px)" type="image/webp" width="552" height="499" srcset="images/promo-food-can-desktop@1x.webp, images/promo-food-can-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/promo-food-can-tablet@1x.webp, images/promo-food-can-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="270" srcset="images/promo-food-can-mobile@1x.webp, images/promo-food-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-food-can-desktop@1x.png 1x, images/promo-food-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-food-can-tablet@1x.png 1x, images/promo-food-can-tablet@2x.png 2x">
+            <img class="promo__image" src="images/promo-food-can-phone.png" width="280" height="270" srcset="images/promo-food-can-phone@2x.png 2x" alt="Большая упаковка еды для котов с курицей" loading="lazy">
           </picture>
         </div>
         <a class="promo__link button" href="#">Подобрать программу</a>
@@ -182,12 +190,14 @@
         </li>
       </ul>
       <a class="main-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="main-footer__developer-text">HTML Academy</span>
         <span class="visually-hidden">Логотип Кэт энерджи</span>
+        <svg class="main-footer__developer-logo" width="27" height="34" fill="none">
+          <use href="icons/stack.svg#icon-html-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>
-
-  <script src="index.js"></script>
 </body>
 
 </html>
