@@ -1,6 +1,6 @@
 .example {
   background-color: var(--bg-secondary, #ff6347);
-  padding: 25px 20px 40px;
+  padding: 25px 20px 36px;
   display: grid;
   grid-template-columns: 1fr 280px 1fr;
   row-gap: 20px;
@@ -47,13 +47,14 @@
 }
 
 .example__description {
-  @include primary-font (16px, 24px); // $font-size, $line-height
+  @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    @include primary-font (16px, 24px); // $font-size, $line-height
     margin-bottom: 55px;
   }
 
@@ -69,6 +70,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 70px 60px;
+  column-gap: 31px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px 341px;

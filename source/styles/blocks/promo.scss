@@ -13,7 +13,7 @@
     linear-gradient(90deg, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
   background-color: #3b7d1d;
-  background-position: 50% 0;
+  background-position: 50% -2px;
 
   @media (min-width: $tablet-width) {
     // width: $tablet-width;
@@ -114,6 +114,7 @@
   justify-content: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding: 10px 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
