@@ -3,7 +3,7 @@
 
   @media (min-width: $desktop-width) {
     z-index: 3;
-    margin-right: 200px;
+    margin-right: 142px;
   }
 }
 
@@ -53,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    min-width: 491px;
   }
 }
 
@@ -115,8 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0;
-    border-top: none;
+    padding: 15px 16px 11px;
   }
 }
 

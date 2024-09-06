@@ -40,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 }
 
@@ -64,8 +64,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 246px);
     grid-template-rows: 280px;
-    gap: 70px 94px;
-    margin-bottom: 80px;
+    gap: 70px 78px;
+    margin-bottom: -17px;
   }
 }
 
