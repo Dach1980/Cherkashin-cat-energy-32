@@ -2,8 +2,10 @@
   width: $mobile-width;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 auto;
   padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 
   @media (min-width: $tablet-width) {
@@ -62,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
@@ -202,7 +205,7 @@
   color: var(--text-description, #ff6347);
 
   @media (min-width: $tablet-width) {
-  @include primary-font (16px, 20px); // $font-size, $line-height
+    @include primary-font (16px, 20px); // $font-size, $line-height
   }
 
   @media (min-width: $desktop-width) {
