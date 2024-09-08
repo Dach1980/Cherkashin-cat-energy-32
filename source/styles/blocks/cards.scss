@@ -2,7 +2,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 59px 60px;
     margin-bottom: 74px;
     padding: 0;
   }
@@ -54,10 +54,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 37px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 38px;
     border: 2px solid #f2f2f2;
-    margin-top: auto;
+    margin-top: 80px;
   }
 }
 
@@ -83,6 +83,10 @@
   display: block;
   text-align: center;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 77px;
+  }
 }
 
 .cards__link-image-more {
@@ -92,6 +96,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+    padding: 0;
   }
 }
 
