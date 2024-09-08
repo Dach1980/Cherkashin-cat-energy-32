@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: block;
-    margin: 0;
+    margin: 0 30px;
     padding: 0;
   }
 
@@ -28,6 +28,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    // width: 708px;
     margin-bottom: 80px;
   }
 
@@ -64,7 +65,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
-    width: $tablet-width;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,6 +199,10 @@
 .addition-food__description-gift {
   @include primary-font (16px, 20px); // $font-size, $line-height
   color: var(--white, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    width: 187px;
+  }
 }
 
 .addition-food__description {
@@ -260,6 +265,8 @@
     );
   background-position: center;
   background-size: 100%;
+  height: 200px;
+  width: 707px;
   background-repeat: no-repeat;
   padding: 59px 59px 43px;
   margin: 0;
@@ -267,12 +274,12 @@
   &::before {
     content: "";
     display: block;
-    width: 78px;
-    height: 80px;
+    width: 80px;
+    height: 83px;
     margin: 0 auto;
     margin-bottom: 48px;
     background-image: url("../../icons/icon-gift.svg");
-    background-size: 100%;
+    background-size: 80px 83px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -281,7 +288,7 @@
     text-align: left;
     display: flex;
     align-items: center;
-    padding: 57px 125 60px 77px;
+    padding: 57px 112px 60px 81px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
