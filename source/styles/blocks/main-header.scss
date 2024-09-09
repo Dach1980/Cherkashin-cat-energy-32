@@ -20,8 +20,10 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding: 52px 34px 25px 30px;
+    padding: 52px 110px 25px 110px;
     height: 169px;
+    // column-gap: 540px;
+    justify-content: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,5 +87,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.main-header__logo-text {
+  @media (min-width: $desktop-width) {
+    margin-right: 537px;
   }
 }
