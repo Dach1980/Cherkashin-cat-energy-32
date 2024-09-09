@@ -31,6 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include secondary-font (60px, 1); // $font-size, $line-height
+    padding-top: 42px;
+    padding-bottom: 88px;
   }
 }
