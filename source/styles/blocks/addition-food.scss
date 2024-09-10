@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    margin: 0;
     padding: 0 110px;
     // margin-bottom: 96px;
   }
@@ -51,6 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     margin-bottom: 0;
     width: 225px;
     margin-right: 100px;
@@ -166,7 +168,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include secondary-font (40px, 1); // $font-size, $line-height
     margin-left: 0;
+    margin-bottom: 78px;
 
     &::after {
       margin-left: calc((1220px - 100vw) / 2);
@@ -191,7 +195,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    width: 293px;
+    width: 284px;
     margin-top: 3px;
   }
 }
@@ -225,6 +229,10 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
