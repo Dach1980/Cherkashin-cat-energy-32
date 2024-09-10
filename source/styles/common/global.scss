@@ -15,7 +15,7 @@ body {
   @include primary-font (16px, 18px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   background-color: var(--white, #ff6347);
-//
+  //
   // @media (min-width: $tablet-width) {
   //   width: $tablet-width;
   // }
