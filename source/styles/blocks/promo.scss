@@ -34,12 +34,15 @@
   grid-column: 2 / 3;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 708px;
     display: grid;
     grid-template-columns: 90px auto;
     grid-template-rows: 200px 40px 612px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     grid-template-columns: 80px 414px 179px 432px;
     grid-template-rows: 241px 71px 54px 183px;
     padding: 0;
