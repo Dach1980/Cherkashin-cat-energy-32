@@ -1,5 +1,4 @@
 .addition-food {
-  width: $mobile-width;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -9,14 +8,14 @@
 
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    // width: $tablet-width;
     display: block;
     margin: 0 30px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    // width: $desktop-width;
     margin: 0;
     padding: 0 110px;
     // margin-bottom: 96px;
@@ -24,16 +23,19 @@
 }
 
 .addition-food__wrapper {
+  margin: 0 auto;
+  width: $mobile-width;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    // width: 708px;
+    width: 708px;
     margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-bottom: 96px;
   }
 }

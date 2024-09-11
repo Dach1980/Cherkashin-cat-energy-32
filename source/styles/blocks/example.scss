@@ -26,6 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     display: grid;
     grid-template-columns: 1fr 436px 224px 560px 1fr;
     grid-template-rows: 136px 166px 221px;
