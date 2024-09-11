@@ -18,36 +18,38 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-        <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy" loading="lazy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/nav/logo-text.svg" type="image/svg+xml" width="118" height="21">
-        <img class="main-header__logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy" loading="lazy">
-      </picture>
-    </a>
+  <div class="page__wrapper">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy" loading="lazy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/nav/logo-text.svg" type="image/svg+xml" width="118" height="21">
+          <img class="main-header__logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy" loading="lazy">
+        </picture>
+      </a>
 
-    <nav class="main-nav main-nav--closed">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="#">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </nav>
-  </header>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+  </div>
 
   <main class="main-container container">
     <section class="basic-products">
