@@ -9,6 +9,7 @@
 }
 
 .programs__wrapper {
+
   display: flex;
   width: $mobile-content;
   // row-gap: 20px;
@@ -20,6 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
     display: flex;
     width: $desktop-width;
     justify-content: left;
