@@ -2,7 +2,7 @@
   // width: $mobile-width;
   margin: 0 auto;
   padding-top: 26px;
-  background-color: #f2f2f2;
+  background-color: var(--white, #ff6347);
 
   @media (min-width: $tablet-width) {
     // width: $tablet-width;
@@ -22,13 +22,14 @@
 .contacts__wrapper {
   margin: 0 auto;
   width: $mobile-width;
-  padding: 0;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: $tablet-width;
-    padding: 60px 50px;
+    padding: 60px 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

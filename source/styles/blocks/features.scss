@@ -37,7 +37,7 @@
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin: 0;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-bottom: 72px;
   }
 
@@ -74,7 +74,7 @@
 
 .features__item {
   display: flex;
-  column-gap: 24px;
+  column-gap: 20px;
   list-style: none;
   order: 1;
 
@@ -121,23 +121,23 @@
 
 .features__leaf {
   --icon: url("../../icons/icon-leaf.svg");
-  --size: 30px 32px;
+  --size: 31px 30px;
   // --height: 17px;
 }
 
 .features__powder {
   --icon: url("../../icons/icon-powder.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__eat {
   --icon: url("../../icons/icon-eat.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__clock {
   --icon: url("../../icons/icon-clock.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__description {
