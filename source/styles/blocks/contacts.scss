@@ -27,7 +27,6 @@
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     width: $tablet-width;
     padding: 60px 70px;
     display: flex;
@@ -36,13 +35,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 566px;
     margin: 0;
     z-index: 2;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-color: var(--white, #ff6347);
-    padding: 60px 80px;
-    padding-right: 71px;
+    padding: 60px 71px 60px 78px;
   }
 }
 

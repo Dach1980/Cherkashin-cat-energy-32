@@ -24,9 +24,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin: 0 auto;
+    // padding-top: 65px;
     width: 1220px;
-    padding: 55px 110px;
+    padding: 65px 0 55px;
   }
 }
 
@@ -45,6 +45,11 @@
     border-bottom: none;
     margin-left: 32px;
     padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+    padding-top: 6px;
   }
 }
 

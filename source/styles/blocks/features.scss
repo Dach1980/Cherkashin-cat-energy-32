@@ -168,4 +168,22 @@
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
+
+  @media (min-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
