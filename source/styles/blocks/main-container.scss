@@ -1,9 +1,6 @@
 .main-container {
   margin: 0 auto;
-
-  // @media (min-width: $desktop-width) {
-  //   margin: 0 110px;
-  // }
+  flex-grow: 1;
 }
 
 .main-container__title {
