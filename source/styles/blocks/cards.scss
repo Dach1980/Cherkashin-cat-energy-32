@@ -40,6 +40,10 @@
       // border-top: 1px solid var(--catalog-border, #ff6347);
       border-top: none;
     }
+
+    // @media (min-width: $desktop-width) {
+    //   border-top: none;
+    // }
   }
 }
 
