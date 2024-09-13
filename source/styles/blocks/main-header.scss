@@ -14,9 +14,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 110px 25px;
+    padding: 52px 0 25px;
     height: 169px;
-    justify-content: left;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,8 +33,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     height: 50px;
-    // outline: 5px solid rgba(255, 255, 0, 0.8);
-    // outline-offset: -5px;
     gap: 13px;
   }
 
@@ -52,6 +50,12 @@
 }
 
 .main-header__logo-text {
+  margin-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 537px;
   }

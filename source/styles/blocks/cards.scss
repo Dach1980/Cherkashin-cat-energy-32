@@ -3,13 +3,13 @@
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 59px 60px;
-    margin-bottom: 74px;
+    margin-bottom: 70px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 70px 80px;
+    gap: 65px 80px;
     margin-bottom: 71px;
   }
 }
@@ -21,7 +21,7 @@
   grid-template-columns: 140px 140px;
   grid-template-rows: 107px 40px;
   row-gap: 17px;
-  padding: 20px 20px 24px;
+  padding: 23px 20px 21px;
   background-image: none;
 
   @media (min-width: $tablet-width) {
@@ -40,10 +40,6 @@
       // border-top: 1px solid var(--catalog-border, #ff6347);
       border-top: none;
     }
-
-    // @media (min-width: $desktop-width) {
-    //   border-top: none;
-    // }
   }
 }
 
@@ -58,6 +54,10 @@
     padding-bottom: 38px;
     border: 2px solid #f2f2f2;
     margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
   }
 }
 
@@ -82,14 +82,14 @@
 .cards__link-more {
   display: block;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 33px;
+    padding-bottom: 36px;
   }
 }
 
@@ -128,6 +128,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -169,7 +170,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0;
     margin-bottom: 33px;
   }
 }
@@ -200,6 +201,11 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid var(--example-border, #ff6347);
     padding-bottom: 4px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 
   &:not(:first-child) {

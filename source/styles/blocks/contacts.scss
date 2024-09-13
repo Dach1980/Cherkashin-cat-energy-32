@@ -1,13 +1,11 @@
 .contacts {
-  // width: $mobile-width;
   margin: 0 auto;
   padding-top: 26px;
   background-color: var(--white, #ff6347);
 
   @media (min-width: $tablet-width) {
-    // width: $tablet-width;
     padding-top: 0;
-    background-color: var(--white, #ff6347);
+    background-color: var(--gray-light, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 60px 70px;
+    padding: 62px 70px 58px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,7 +39,7 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-color: var(--white, #ff6347);
-    padding: 60px 71px 60px 78px;
+    padding: 62px 70px 60px 79px;
   }
 }
 
