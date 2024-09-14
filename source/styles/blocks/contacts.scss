@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    background-color: var(--gray-light, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 110px 565px 765px 1fr;
     grid-template-rows: 95px min-content 106px;
-    background-color: var(--gray-light, #ff6347);
+    // background-color: var(--gray-light, #ff6347);
   }
 }
 

@@ -17,8 +17,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc($tablet-width - 60px);
-    // padding: 0 30px;
-   }
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
