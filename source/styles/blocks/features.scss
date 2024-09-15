@@ -3,9 +3,10 @@
     margin: 0;
     border-bottom: 1px solid var(--nav-border, #ff6347);
   }
-  // @media (min-width: $desktop-width) {
 
-  // }
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .features__wrapper {
