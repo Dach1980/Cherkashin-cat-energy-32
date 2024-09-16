@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, #ffffff 28%, #eaeaea 28%);
-    padding: 45px 0 85px;
+    padding: 45px 0 83px;
   }
 }
 
@@ -26,9 +26,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: calc($desktop-width - 220px);
     display: grid;
-    grid-template-columns: 1fr 450px 205px 573px 1fr;
+    grid-template-columns: 0 450px 205px 573px 0;
     grid-template-rows: min-content 166px 213px;
   }
 }

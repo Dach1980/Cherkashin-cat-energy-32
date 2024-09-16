@@ -16,14 +16,12 @@
   background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
-    // margin: 0 30px;
     display: block;
     background-image: none;
     background-color: var(--white, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
-    // width: $tablet-width;
     display: block;
     background-image: none;
     background-color: var(--white, #ff6347);
@@ -75,7 +73,6 @@
     color: var(--black, #ff6347);
     background-color: var(--white, #ff6347);
     padding-top: 80px;
-    // padding-bottom: 40px;
   }
 }
 
@@ -97,6 +94,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
+    padding-bottom: 50px;
   }
 }
 
