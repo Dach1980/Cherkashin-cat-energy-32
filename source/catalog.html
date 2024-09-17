@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="scripts/index.js" defer="defer"></script>
+  <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
@@ -17,7 +17,7 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header" data-test="header">
+    <header class="main-header main-header--nojs" data-test="header">
       <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
@@ -30,7 +30,7 @@
         </picture>
       </a>
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
