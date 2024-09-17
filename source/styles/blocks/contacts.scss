@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding-top: 26px;
   background-color: var(--white, #ff6347);
-  position: relative;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -29,7 +29,6 @@
     width: $tablet-width;
     padding: 62px 70px 58px;
     display: flex;
-    // flex-direction: row;
     flex-flow: row wrap;
     justify-content: space-between;
   }
@@ -93,7 +92,6 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-
     height: 400px;
   }
 
@@ -109,34 +107,24 @@
   margin: 0 auto;
   padding: 0;
   display: block;
-  position: absolute;
-  top: 113px;
+  object-position: center;
+
+  // width: 100%;
+  // height: 100%;
+  // position: absolute;
+  // top: 113px;
   // left: 0;
-  left: calc(50vw - 175px);
-  z-index: -1;
+  // left: calc(50vw - 175px);
+  // z-index: -1;
 
-  @media (min-width: $tablet-width) {
-    top: 200px;
-    left: calc(50vw - 397px);
-  }
+  // @media (min-width: $tablet-width) {
+  //   top: 200px;
+  //   left: calc(50vw - 397px);
+  // }
 
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: calc(50vw - 731px);
-  }
-}
-
-.contacts__map-interactive {
-  display: none;
-  border: none;
-  width: 100%;
-  height: 362px;
-
-  @media (min-width: $tablet-width) {
-    z-index: 1;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    height: 400px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   position: absolute;
+  //   top: 0;
+  //   left: calc(50vw - 731px);
+  // }
 }

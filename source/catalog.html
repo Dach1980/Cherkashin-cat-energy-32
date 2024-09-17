@@ -49,7 +49,7 @@
     </header>
   </div>
 
-  <main class="main-container container" data-test="main">
+  <main class="main-container" data-test="main">
     <section class="basic-products">
       <div class="basic-products__wrapper container">
         <h1 class="main-container__title">Каталог продукции</h1>
@@ -358,13 +358,20 @@
         <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
       </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725361116896!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Расположение магазина на карте" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <!-- <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/map-desktop.jpg 1x, images/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="contacts__image" src="images/map-phone.jpg" width="320" height="362" srcset="images/map-phone@2x.jpg 2x" alt="Расположение магазина на карте">
-        </picture> -->
+      <div class="contacts__map">
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
+            <img class="contacts__map-image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Расположение магазина на карте" width="320" height="362" loading="lazy">
+          </picture>
+        </noscript>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247737302!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1725632349929!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу улица Большая конюшенная, дом 19/8, Санкт-Петербург">
+        </iframe>
+      </div>
     </section>
   </main>
 
