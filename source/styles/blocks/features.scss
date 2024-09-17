@@ -92,8 +92,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap: 0;
-    grid-template-columns: 80px 30px 134px;
+    gap: 0 30px;
+    grid-template-columns: 80px 164px;
     grid-template-rows: 80px auto;
 
     &::after {
@@ -102,18 +102,16 @@
       margin: 0;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      // margin-bottom: 31px;
     }
 
     &::before {
       @include secondary-font (280px, 1); // $font-size, $line-height
-      // position: absolute;
       counter-increment: list; /* Увеличиваем значение счетчика */
       content: counter(list) " "; /* Выводим число */
       display: block;
       color: var(--gray-light, #ff6347);
       transform: translate(4%, -14%);
-      grid-column: 3 / -1;
+      grid-column: 2 / -1;
       grid-row: 1 / -1;
     }
   }
