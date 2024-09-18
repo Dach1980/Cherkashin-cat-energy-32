@@ -2,7 +2,6 @@
   margin: 0 auto;
   width: $mobile-width;
 
-  & .promo__wrapper,
   &.features__wrapper,
   &.programs__wrapper,
   &.example__wrapper,
@@ -10,10 +9,14 @@
     width: calc($mobile-width - 40px);
   }
 
+  &.promo__wrapper {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: calc($tablet-width - 60px);
 
-    & .promo__wrapper,
+    &.promo__wrapper,
     &.features__wrapper,
     &.programs__wrapper,
     &.example__wrapper,
@@ -29,7 +32,7 @@
   @media (min-width: $desktop-width) {
     width: calc($desktop-width - 220px);
 
-    & .promo__wrapper,
+    &.promo__wrapper,
     &.features__wrapper,
     &.programs__wrapper,
     &.example__wrapper,
