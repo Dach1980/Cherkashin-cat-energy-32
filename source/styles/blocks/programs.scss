@@ -1,6 +1,5 @@
 .programs {
   background-color: var(--white, #ff6347);
-  // margin: 0 20px;
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -9,21 +8,13 @@
 }
 
 .programs__wrapper {
-
   display: flex;
-  width: $mobile-content;
-  // row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    width: calc($tablet-width - 60px);
     row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0 110px;
-    display: flex;
-    width: calc($desktop-width - 220px);
     justify-content: left;
   }
 }

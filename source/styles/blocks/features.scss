@@ -10,21 +10,9 @@
 }
 
 .features__wrapper {
-  width: calc($mobile-width - 40px);
-  margin: 0 auto;
+  // width: calc($mobile-width - 40px);
+  // margin: 0 auto;
   padding: 0;
-  // padding: 0 20px;
-  // margin: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    width: calc($tablet-width - 60px);
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    width: calc($desktop-width - 220px);
-    // padding: 0 110px;
-  }
 }
 
 .features__title {
@@ -61,7 +49,7 @@
     grid-template-rows: 280px 280px;
     gap: 36px 153px;
     counter-reset: list;  /* Инициируем счетчик */
-    margin-bottom: 7px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
