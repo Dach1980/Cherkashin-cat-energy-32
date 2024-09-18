@@ -215,3 +215,8 @@
     }
   }
 }
+
+.main-header--nojs .main-nav__toggle {
+  opacity: 0;
+  pointer-events: none;
+}
