@@ -9,6 +9,7 @@
     width: calc($mobile-width - 40px);
   }
 
+  &.page__wrapper,
   &.promo__wrapper {
     width: 100%;
   }
@@ -16,6 +17,7 @@
   @media (min-width: $tablet-width) {
     width: calc($tablet-width - 60px);
 
+    &.page__wrapper,
     &.promo__wrapper,
     &.features__wrapper,
     &.programs__wrapper,
@@ -32,6 +34,7 @@
   @media (min-width: $desktop-width) {
     width: calc($desktop-width - 220px);
 
+    &.page__wrapper,
     &.promo__wrapper,
     &.features__wrapper,
     &.programs__wrapper,
