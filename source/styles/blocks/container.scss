@@ -10,7 +10,8 @@
   }
 
   &.page__wrapper,
-  &.promo__wrapper {
+  &.promo__wrapper,
+  &.basic-products__wrapper {
     width: 100%;
   }
 
@@ -22,7 +23,8 @@
     &.features__wrapper,
     &.programs__wrapper,
     &.example__wrapper,
-    &.contacts__wrapper {
+    &.contacts__wrapper,
+    &.basic-products__wrapper {
       width: calc($tablet-width - 60px);
     }
 
@@ -39,12 +41,12 @@
     &.features__wrapper,
     &.programs__wrapper,
     &.example__wrapper,
-    &.subscribe {
+    &.subscribe,
+    &.basic-products__wrapper {
       width: calc($desktop-width - 220px);
     }
 
     &.contacts__wrapper {
-      // width: calc($mobile-width - 40px);
       width: 566px;
     }
   }
